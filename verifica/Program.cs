@@ -52,6 +52,15 @@
             }
             Console.WriteLine("La parola non si ripete in lettere");
         }
+        static void lancioD(int[] array)
+        {
+            Random rand = new Random();
+            for(int i = 0; i < 20; i++)
+            {
+                int rnd = rand.Next(1, 6);
+                array[i] = rnd;
+            }
+        }
         static void Main(string[] args)
 
         {

@@ -26,9 +26,20 @@
             }
             Console.WriteLine(parola);
         }
-        static void Main(string[] args)
+        static void diverso(string p)
         {
+            string pa = p;
+            for(int i = 0; i < p.Length; i++)
+            {
+                if()
+            }
+        }
+        static void Main(string[] args)
 
+        {
+            Console.WriteLine("dimmi una parola");
+            string p = Console.ReadLine();
+         
             string parola = "ILMATNOHRBC";
             string alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             completa(parola, alfabeto);

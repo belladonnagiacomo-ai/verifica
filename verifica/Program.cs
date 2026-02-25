@@ -4,10 +4,27 @@
     {
         static void completa(string parola, string alfabeto)
         {
-            for(int i = 0; i < parola.Length; i++)
+            bool c;
+            for (int i = 0; i < alfabeto.Length; i++)
             {
-                Console.Write(parola[i]);
+                c = false;
+                for (int j = 0; j < parola.Length; j++)
+                {
+                   c = parola.Contains(alfabeto[i]);
+                   
+
+                }
+                if (c == true)
+                {
+
+                }
+                else
+                {
+                    parola += alfabeto[i];
+                }
+               
             }
+            Console.WriteLine(parola);
         }
         static void Main(string[] args)
         {

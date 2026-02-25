@@ -29,17 +29,36 @@
         static void diverso(string p)
         {
             string pa = p;
+            bool c;
+            int k = 0;
             for(int i = 0; i < p.Length; i++)
             {
-                if()
+                k = 0;
+                for(int j = 0; j < p.Length; j++)
+                {
+                   
+                    if (p[i] == pa[j])
+                    {
+                        k++;
+                        if(k >= 2)
+                        {
+                            Console.WriteLine("La parola " + p + " contiene piu volte la stessa lettera");
+                            return;
+                        }
+                    }
+                    
+                }
+               
             }
+            Console.WriteLine("La parola non si ripete in lettere");
         }
         static void Main(string[] args)
 
         {
             Console.WriteLine("dimmi una parola");
             string p = Console.ReadLine();
-         
+            diverso(p);
+            Console.WriteLine("--------------------------------------");
             string parola = "ILMATNOHRBC";
             string alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             completa(parola, alfabeto);
